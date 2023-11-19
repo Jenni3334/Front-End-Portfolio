@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+    <title> The American Cookie Shop</title>
+   
+ 
+    <h1 class="header"><a href="about.html"> The American Cookie Shop: Cookie Types<span></span></h1></a>
+
+</head>
+<body>
+    <div class="user">
+   <form>
+    <h2>Add a New Cookie</h2>
+    <label> Cookie Name </label><br>
+    <input id="cookieName" name="flavor" type="text" >
+    <label><br>Flavor Type</label><br>
+    <input id="flavor" name="flavor type" type="text">
+    <label><br>Image URL</label><br>
+    <input id="image" name="url" type="text">
+    <label><br>Price</label><br>
+    <input id="price" name="p" type="text">
+    <label><br>In stock<br>
+  <select id="stock" name="stock-status">
+    <option>Select one</option>
+    <option value="in-stock">in stock</option>
+    <option value="out">out of stock</option>
+</select>
+</label><br>
+    <input type="submit" value="Reset">
+    <button type="submit" onclick="addNewEntry()">submit</button>
+
+    
+
+
+   </form>
+   </div>
+
+ <div class="store">
+    <!-- store is the container for cookie inventories -->
+
+    <!-- each entry contains an image, flavor, price, and stock status -->
+ <div class="cookie">
+    <img src="https://i0.wp.com/brownedbutterblondie.com/wp-content/uploads/2023/05/CCC-Cuisinart-IG-BEST-1-scaled.jpg?fit=1834%2C2560&ssl=1" alt="Chocolate cookie">
+    <div class="flavors">
+        <h2 class="flavor"> Chocolate Chip</h2>
+        <p class="price">$10.00 </p>
+        <p class="status">in stock</p>
+        <td><button class="remove-button" onclick="removeItem(this)">Remove</button></td>
+
+</div>
+    </div>
+ </div>
+
+    <div class="cookie">
+       <img src="https://leelalicious.com/wp-content/uploads/2023/08/Protein-Oatmeal-Cookie.jpg" alt="oatmeal">
+       <div class="flavor">
+           <h2 class="flavor"> Oatmeal</h2>
+           <p class="price">$10.00 </p>
+           <p class="status">in stock</p>
+           <td><button class="remove-button" onclick="removeItem(this)">Remove</button></td>
+
+
+</div>
+ </div>
+ <div class="cookie">
+    <img src="https://www.lecremedelacrumb.com/wp-content/uploads/2021/06/peanut-butter-cookies-13sm-2-500x500.jpg" alt="Peanut Butter cookie">
+    <div class="flavor">
+        <h2 class="flavor"> Peanut Butter</h2>
+        <p class="price">$10.00 </p>
+        <p class="status">in stock</p>
+        <td><button class="remove-button" onclick="removeItem(this)">Remove</button></td>
+
+
+        </div>
+    </div>
+ </div>
+    
+</body>
+<div class="footer"> 
+<footer>The American Cookie Shop </footer>
+</div>
+</html>
