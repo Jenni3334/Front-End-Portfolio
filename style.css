@@ -4,6 +4,7 @@ body, h1, h2, p, form {
     padding: 0;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
@@ -40,7 +41,7 @@ form select {
     padding: 8px;
 }
 
-form button {
+form button:hover {
     padding: 10px;
     background-color: #333;
     color: #fff;
@@ -66,6 +67,9 @@ form button {
 .cookie img {
     width: 100%;
     border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto
+    
 }
 
 .cookie h2,
@@ -73,7 +77,7 @@ form button {
     margin: 10px 0;
 }
 
-.cookie .remove-button {
+.cookie .remove-button:hover {
     padding: 8px;
     background-color: #e74c3c;
     color: #fff;
@@ -89,4 +93,10 @@ form button {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+@media screen and (max-width: 600px) {
+    .user {
+        max-width: 100%;
+        background-color: grey;
+    }
 }

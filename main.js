@@ -36,3 +36,18 @@ function removeItem(button) {
     cookieEntry.remove();
 }
 
+//api
+const apiURL = 'https://api-ninjas.com/api/emoji'
+fetch(apiURL)
+.then(response =>{
+    if(!response.ok){
+        throw new Error('Newtork response was not ok: ${Response.status}');
+    }
+    return main.js()
+})
+.then(data =>{
+    console.log(data);
+})
+.catch(error => {
+    console.error("Error fetching data:")
+});
